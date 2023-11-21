@@ -15,8 +15,9 @@ O(log(n)): Describes logarithmic time complexity, which often occurs in algorith
 
   - The complexity of my logic: I iterate through my array that's O(n), and insert elements from the array into my     
   set. The insertion in the set takes O(log(n)), so the complexity of my program is O(n + log(n))."
+
 2 : Apartments:
-  - In this problem, we have an array of applicants and M apartments. Our task is to distribute the apartments so that as many applicants as possible will get an apartment.
+  - In this problem, we have an array N of applicants and M apartments. Our task is to distribute the apartments so that as many applicants as possible will get an apartment.
   - To achieve this, we first sort both arrays to rearrange the values from the smallest to the largest. We employ a technique known as 'two pointers,' with two pointers, i and j, each initially pointing to the first element in our arrays. We then iterate through our arrays.
     If applicants[i] is greater than apartments[j], it guarantees that all applications from i to n are greater than apartments[j]. In this case, we increment the value of j. Conversely, if applicants[i] is smaller than apartments[j], and the difference between applicants[i] and apartments[j] is small or equal to K, we increment our answer.
     The complexity of my logic: In the worst-case scenario, we need to iterate through our array twice. Therefore, the complexity is O(2n)."
