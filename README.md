@@ -13,7 +13,7 @@ O(log(n)): Describes logarithmic time complexity, which often occurs in algorith
   2 : Iterate through the array, inserting each element into the set.
   3 : Finally, print the size of the set, which corresponds to the count of distinct numbers in the array.
 
-  - The complexity of my logic: I iterate through my array and insert elements from the array into my     
+  - The complexity of my logic: I iterate through my array that's O(n), and insert elements from the array into my     
   set. The insertion in the set takes O(log(n)), so the complexity of my program is O(n + log(n))."
 
    
